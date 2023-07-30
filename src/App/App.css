@@ -1,0 +1,302 @@
+
+/* begin utility colors */
+
+:root {
+  --colorDark: rgb(0, 22, 22);
+  --colorLight: #9100ff;
+  --colorLighter: #a229ff;
+}
+
+.colorLighter {
+  background-color: var(--colorLighter);
+}
+
+.red {
+  background-color: rgb(255, 53, 53);
+}
+
+.gray {
+  background-color: rgb(158, 158, 158);
+}
+
+/* end utility colors */
+
+.banner {
+  width: 30vw;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  margin: 0;
+  border: 0;
+  text-align: center;
+  color: white;
+}
+
+@font-face {
+  font-family: sexyWinter;
+  src: url(../Fonts/MotionPicture_PersonalUseOnly.ttf);
+}
+
+.sexyFont {
+  font-family: sexyWinter;
+  color: black;
+}
+
+.bannerWrap {
+  background-color: black;
+  width: 100vw;
+  border-bottom: 10px solid #9100ff;
+}
+
+.navi {
+  background-color: var(--colorLight);
+  border-bottom: 10px solid rgba(255, 255, 25, 0.76);
+  box-shadow: 0px 0px 2px 2px rgba(255,244,28,0.79);
+}
+
+.navHelper > * {
+  font-size: 3vw;
+}
+
+.navHelper > a {
+  font-family: sexyWinter;
+  cursor: pointer;
+  text-decoration: none;
+  color: white !important;
+}
+
+.navHelper > a:hover {
+  transform: translateY(-10px);
+} 
+
+.navigationBar > .nav-link {
+  border: 4px solid rgba(231, 231, 49, 0.76);
+  background-color: var(--colorLighter);
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  width: 8rem;
+  box-shadow: 0px 0px 18px 4px rgba(255,244,28,0.79);
+
+  transition: all .25s;
+}
+
+.navigationBar > .nav-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 0px 10px 0px white;
+  color: white;
+}
+
+/* begin utility functions */
+
+.boxHover:hover{
+  transform: translateY(-4px);
+}
+
+.contStyling {
+  box-shadow: 0px 0px 10px 0px var(--colorDark);
+  border-radius: 10px;
+}
+
+.sexyFont {
+  font-family: sexyWinter;
+  color: whitesmoke;
+}
+
+/* end utility functions */
+
+/* pictures */
+
+.homeImg {
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+  width: 20vw;
+  margin-left: 100px;
+  margin-right: 100px;
+} 
+
+.mdHomeImg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100vw;
+}
+
+.md-container {
+  height: 600px;
+}
+
+.drinksImg {
+  background-image: url(../Images/drinks.jpg);
+}
+.shoesImg {
+  background-image: url(../Images/shoesinclub.jpg);
+}
+.heartImg {
+  background-image: url(../Images/heart.jpg);
+}
+
+.smallBackground {
+  background-image: url('../Images/background_small.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mediumBackground {
+  background-image: url('../Images/medium_background.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.font {
+  font-size: 30px !important;
+}
+
+.largeBackground {
+  background-image: url(../Images/plain_background_large.jpg);
+  background-size: cover;
+  background-repeat: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* end pictures */
+
+.sm-nav-helper > h2 {
+  text-align: start;
+  font-family: sexyWinter;
+  font-size: 50px;
+}
+
+.md-nav-helper > h2 {
+  text-align: center;
+  font-family: sexyWinter;
+  font-size: 50px;
+}
+
+
+.adminCard {
+  width: 40vw;
+  max-width: 40vw;
+  background-color: white;
+  border: solid 3px var(--colorLight);
+  border-radius: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.adminCard > button {
+  width: 10vw;
+  margin-top: 10px;
+}
+
+.cardHead {
+  background-color: rgb(175, 175, 175);
+  border-bottom: 3px solid black;
+}
+
+.closeBtnRight {
+  margin-right: 0px;
+}
+
+/* being modal styling */
+
+.modalHeader {
+  background-color: rgba(0, 0, 0, 0.178);
+  color: #9100ff;
+  font-size: x-large;
+}
+
+.modalBody {
+  background-color: black;
+  color: white;
+  font-size: x-large;
+}
+
+.sideLink1 {
+  background-color: #2fb3fa;
+  width: 10vw;
+  height: 10vh;
+  margin-right: -20px;
+  display: block;
+  margin-top: 100px;
+}
+
+/* end modal styling */
+
+.transparentBackground {
+  background-color: rgba(78, 78, 78, 0.459);
+}
+
+.amenitiesHelper > * {
+  font-size: 3vw;
+  font-family: sexyWinter;
+}
+
+.contactHelper > .col {
+  background-color: rgba(78, 78, 78, 0.459);
+  margin-right: 3vw;
+  margin-left: 3vw;
+  margin-bottom: 100px;
+  max-width: 40vw;
+  width: 30vw;
+  border: 10px solid purple;
+  border-radius: 60px;
+  padding: 50px;
+}
+
+.contactHelper > .col > * {
+  font-size: 1.5vw;
+}
+
+.cardHelper {
+  font-size: 50px;
+  background-color: rgba(110, 110, 110, 0.952) !important;
+  color: white !important;
+  border: 10px solid purple !important;
+}
+
+
+
+/* footer stuff */
+
+@font-face {
+  font-family: nameFont1;
+  src: url(../Fonts/Aloevera-OVoWO.ttf);
+}
+@font-face {
+  font-family: nameFont2;
+  src: url(../Fonts/NatureBeautyPersonalUse-9Y2DK.ttf);
+}
+
+.footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+}
+
+.DevName > a > h1{
+  font-size: 2vw;
+}
+
+.DevName > a {
+  text-decoration: none !important;
+}
+
+.Jordan1 {
+  font-family: nameFont1;
+}
+.Jordan2 {
+  font-family: nameFont2;
+  color: red;
+}
