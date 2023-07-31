@@ -1,8 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap"
-import apis from "../Api"
 import { EventCard } from "./Cards/EventCard"
 
-export const Events = (Props) => {
+export const Events = (Props: { events: any[] }) => {
+
     return(
         <>
             <Container className='d-flex justify-content-center flex-column ' style={{maxWidth: 'none'}}>

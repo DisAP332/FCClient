@@ -1,20 +1,18 @@
-import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Route, Routes } from 'react-router-dom'
 import { Navigation } from "../Components/Navigation";
 import { Home } from "../Pages/Home";
-import { Admin } from "../admin/Admin";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { About } from "../Pages/About";
 import { Amenities } from "../Pages/Amenities";
 import { Events } from "../Pages/Events";
 import { Contact } from "../Pages/Contact";
-import apis from "../Api";
-import { Col, Container, Row } from "react-bootstrap";
+// import apis from "../Api";
 import { Footer } from "../Components/Footer";
+import apis from "../Api";
+import React from "react";
 
 let events: any;
-let Data
+let Data: any
 
 const fetchEventsData = async () => {
   Data = await apis.getAllEvents()
@@ -22,6 +20,7 @@ const fetchEventsData = async () => {
   events = DataFormatted
   console.log('data fetched')
 }
+
 
 try {
   await fetchEventsData()
@@ -31,11 +30,11 @@ try {
 }
 
 export default function App() {
-  const [message, setMessage] = useState("");
 
-  const queryClient = new QueryClient()
-
+  // fetchData().then(() => console.log('heyo'))
   Data = React.useMemo(() => events, [])
+
+  console.log(Data)
 
   return (
       <>
@@ -56,7 +55,6 @@ export default function App() {
           <div className="d-none d-lg-flex justify-content-center flex-column">
             <Routes>
               <Route path='/' element={<Home />}/>
-              <Route path='/admin' element={<Admin />}/>
               <Route path='/about' element={<About />}/>
               <Route path='/amenities' element={<Amenities />}/>
               <Route path='/events' element={<Events events={Data}/>}/>

@@ -1,6 +1,6 @@
 import { Modal } from "react-bootstrap"
 
-export const AmenitiesModal = (Props) => {
+export const AmenitiesModal = (Props: { show: boolean | undefined; onHide: (() => void) | undefined }) => {
     return (
         <Modal show={Props.show} onHide={Props.onHide} style={{maxWidth: '100vw'}}>
             <Modal.Header className="modalHeader" closeButton>

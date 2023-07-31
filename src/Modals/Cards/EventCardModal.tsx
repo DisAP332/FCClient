@@ -1,7 +1,7 @@
-import { Button, Col, Form, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 
-export const EventCardModal = (Props) => {
+export const EventCardModal = (Props: any) => {
     return(
         <Card className='cardHelper mt-5' style={{fontFamily: 'none', width: '80vw'}}>
             <Card.Header>

@@ -1,7 +1,6 @@
-import { Col, Container, Modal, Row } from "react-bootstrap"
-import { EventCardModal } from "./Cards/EventCardModal"
+import { Modal } from "react-bootstrap"
 
-export const ContactModal = (Props) => {
+export const ContactModal = (Props: any) => {
     return (
         <Modal show={Props.show} onHide={Props.onHide} style={{maxWidth: '100vw'}}>
             <Modal.Header className="modalHeader" closeButton>

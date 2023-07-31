@@ -1,27 +1,14 @@
 import { useState } from "react"
-import { Navbar, Container, Nav, Row, Col } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 
 import Banner from '../Images/FrenchConnectionLogoBlack.svg'
 import { AboutUsModal } from "../Modals/AboutUsModal"
 import { AmenitiesModal } from "../Modals/AmenitiesModal"
 
-
-// lottie imports 
-
-import facebookLottie from '../Assets/Lotties/facebook.json'
 import { EventsModal } from "../Modals/EventsModal"
 import { ContactModal } from "../Modals/ContactModal"
 
-export const Navigation = (Props) => {
-
-    const facebookLottieOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: facebookLottie,
-        renderSettings: {
-            preserveAspefctRatio: 'xMidYMid slice'
-        }
-    }
+export const Navigation = (Props: { events: any }) => {
 
     const [showAboutUsModal, setShowAboutUsModal] = useState(false)
 

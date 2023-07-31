@@ -1,8 +1,4 @@
 import { Col, Container, Row } from "react-bootstrap"
-import mdCoverImg from '../Images/mediumCover.jpg'
-
-import emailSVG from '../Assets/Icons/email.svg'
-import { Events } from "./Events"
 
 export const Home = () => {
     return (
