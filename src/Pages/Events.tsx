@@ -3,8 +3,6 @@ import apis from "../Api"
 import { EventCard } from "./Cards/EventCard"
 
 export const Events = (Props) => {
-    console.log(Props)
-
     return(
         <>
             <Container className='d-flex justify-content-center flex-column ' style={{maxWidth: 'none'}}>

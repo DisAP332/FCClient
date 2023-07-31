@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 export const EventCardModal = (Props) => {
     return(
-        <Card className='cardHelper mt-5' style={{fontFamily: 'none'}}>
+        <Card className='cardHelper mt-5' style={{fontFamily: 'none', width: '80vw'}}>
             <Card.Header>
                 <Row>
                     <Col className='d-flex justify-content-start'>

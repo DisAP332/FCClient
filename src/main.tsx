@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App/index.tsx'
+import App from './App/index'
 
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'react-bootstrap'

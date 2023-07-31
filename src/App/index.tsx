@@ -20,6 +20,7 @@ const fetchEventsData = async () => {
   Data = await apis.getAllEvents()
   const DataFormatted = Data.data.data
   events = DataFormatted
+  console.log('data fetched')
 }
 
 try {
@@ -29,7 +30,7 @@ try {
   console.log(err)
 }
 
-function App() {
+export default function App() {
   const [message, setMessage] = useState("");
 
   const queryClient = new QueryClient()
@@ -70,5 +71,3 @@ function App() {
       </>
   );
 }
-
-export default App
