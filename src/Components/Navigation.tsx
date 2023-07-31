@@ -9,7 +9,6 @@ import { AmenitiesModal } from "../Modals/AmenitiesModal"
 // lottie imports 
 
 import facebookLottie from '../Assets/Lotties/facebook.json'
-import Lottie from "react-lottie"
 import { EventsModal } from "../Modals/EventsModal"
 import { ContactModal } from "../Modals/ContactModal"
 
@@ -88,14 +87,6 @@ export const Navigation = (Props) => {
                         <h2 onClick={() => handleShowEvents()}>Events</h2>
                         <h2 onClick={() => handleShowContact()}>Contact</h2>
                     </div>
-                    <Lottie 
-                    style={{float:'right'}}
-                    isClickToPauseDisabled={true}
-                    className='mt-3'
-                    options={facebookLottieOptions}
-                    height={120}
-                    width={120}
-                    />
                 </div>
                 
             </div>
@@ -111,14 +102,14 @@ export const Navigation = (Props) => {
                     </div>
                 </div>
                 <div style={{width: '60vw'}}>
-                    <Lottie 
+                    {/* <Lottie 
                     style={{float:'right'}}
                     isClickToPauseDisabled={true}
                     className='mt-3'
                     options={facebookLottieOptions}
                     height={90}
                     width={90}
-                    />
+                    /> */}
                 </div>
             </div>
             {/* <div className="d-flex d-md-none justify-content-start">
