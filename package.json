@@ -8,6 +8,7 @@
     "dev": "vite",
     "start": "vite start",
     "build": "vite build",
+    "homepage": "https://disap332.github.io/FCClient/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "preview": "vite preview"
