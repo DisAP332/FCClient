@@ -7,6 +7,7 @@ import { AmenitiesModal } from "../Modals/AmenitiesModal"
 
 import { EventsModal } from "../Modals/EventsModal"
 import { ContactModal } from "../Modals/ContactModal"
+import { Link } from "react-router-dom"
 
 export const Navigation = (Props: { events: any }) => {
 
@@ -51,15 +52,15 @@ export const Navigation = (Props: { events: any }) => {
                 </Row>
                 <Row>
                     <Col className="d-flex flex-row justify-content-center navHelper transparentBackground">
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                         <h2>|</h2>
-                        <a href="/about">About us</a>
+                        <Link to="/about">About us</Link>
                         <h2>|</h2>
-                        <a href="/amenities">Amenities</a>
+                        <Link to="/amenities">Amenities</Link>
                         <h2>|</h2>
-                        <a href="/events">Events</a>
+                        <Link to="/events">Events</Link>
                         <h2>|</h2>
-                        <a href='/contact'>Contact</a>
+                        <Link to='/contact'>Contact</Link>
                     </Col>
                 </Row>
             </Container>
