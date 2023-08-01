@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   build: {
     target: 'esnext',
-    base: /FCClient/
+    base: /
   }
 })
