@@ -51,15 +51,15 @@ export const Navigation = (Props: { events: any }) => {
                 </Row>
                 <Row>
                     <Col className="d-flex flex-row justify-content-center navHelper transparentBackground">
-                        <a href="/">Home</a>
+                        <a href="/FCClient/">Home</a>
                         <h2>|</h2>
-                        <a href="/about">About us</a>
+                        <a href="/FCClient/about">About us</a>
                         <h2>|</h2>
-                        <a href="/amenities">Amenities</a>
+                        <a href="/FCClient/amenities">Amenities</a>
                         <h2>|</h2>
-                        <a href="events">Events</a>
+                        <a href="/FCClient/events">Events</a>
                         <h2>|</h2>
-                        <a href='contact'>Contact</a>
+                        <a href='/FCClient/contact'>Contact</a>
                     </Col>
                 </Row>
             </Container>
@@ -89,36 +89,8 @@ export const Navigation = (Props: { events: any }) => {
                     </div>
                 </div>
                 <div style={{width: '60vw'}}>
-                    {/* <Lottie 
-                    style={{float:'right'}}
-                    isClickToPauseDisabled={true}
-                    className='mt-3'
-                    options={facebookLottieOptions}
-                    height={90}
-                    width={90}
-                    /> */}
                 </div>
             </div>
-            {/* <div className="d-flex d-md-none justify-content-start">
-                <div className="d-flex justify-content-center" style={{height: 'calc(50px + 10vw)'}}>
-                    <div className="banner"/>
-                    <button>Navigation</button>
-                </div>
-            </div>
-            <div className="d-none d-md-inline">
-                <div className="d-flex justify-content-center" style={{height: 'calc(50px + 10vw)'}}>
-                    <div className="banner"/>
-                </div>
-            </div>
-            <Navbar id='nav' className="navi d-none d-md-inline shadow-sm" style={{position: 'sticky'}}>
-                <Container className="navigationBar">
-                    <Nav.Link className='styledBtn' href='/about'>About us</Nav.Link>
-                    <Nav.Link className='styledBtn' href='/amenities'>Amenities</Nav.Link>
-                    <Nav.Link className='styledBtn' href='/'>HOME</Nav.Link>
-                    <Nav.Link className='styledBtn' href='/events'>Events</Nav.Link>
-                    <Nav.Link className='styledBtn' href='/contact'>Contact Us</Nav.Link>
-                </Container>
-            </Navbar>  */}
         </div>
     )
 }
