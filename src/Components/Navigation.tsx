@@ -51,15 +51,15 @@ export const Navigation = (Props: { events: any }) => {
                 </Row>
                 <Row>
                     <Col className="d-flex flex-row justify-content-center navHelper transparentBackground">
-                        <a href="/FCClient/">Home</a>
+                        <a href="/">Home</a>
                         <h2>|</h2>
-                        <a href="/FCClient/about">About us</a>
+                        <a href="/about">About us</a>
                         <h2>|</h2>
-                        <a href="/FCClient/amenities">Amenities</a>
+                        <a href="/amenities">Amenities</a>
                         <h2>|</h2>
-                        <a href="/FCClient/events">Events</a>
+                        <a href="/events">Events</a>
                         <h2>|</h2>
-                        <a href='/FCClient/contact'>Contact</a>
+                        <a href='/contact'>Contact</a>
                     </Col>
                 </Row>
             </Container>
