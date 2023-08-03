@@ -47,6 +47,7 @@ jobs:
         with:
           # Upload dist repository
           path: './dist'
+          include: "./.well-known/acme-challenge/GhI1F3-HD09JxteWeD40bBslyVY_Rujy_9vPHw_aUB0"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
