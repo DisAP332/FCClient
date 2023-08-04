@@ -1,1 +1,20 @@
-7IMGgbKbQJhBxGU6xwqHCnUPtS0nh359sQkimRA410k.Z0b7H_ba0jugAajJn-qiVS9930ubp46toVc4QSs13n0
+server {  
+    server_name www.portalfi-jbw.com portalfi-jbw.com;
+    return 301 https://portalfi-jbw.com$request_uri;
+}
+server {  
+    listen 443 ssl http2;
+    server_name www.portalfi-jbw.com;
+    include snippets/ssl-params.conf;
+    return 301 https://portalfi-jbw.com$request_uri;
+}
+server {  
+    listen 443 ssl http2;
+    server_name portalfi-jbw.com;
+    include snippets/ssl-params.conf;
+    root /var/www/portalfi-jbw.com;
+    index index.html;
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
