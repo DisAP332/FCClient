@@ -1,45 +1,36 @@
 {
-  "name": "client",
-  "private": false,
+  "name": "newclient",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "dev": "vite",
     "start": "vite start",
     "build": "vite build",
     "homepage": "https://disap332.github.io/FCClient/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-    "@tanstack/react-query": "^4.29.17",
-    "@tanstack/react-table": "^8.9.3",
-    "axios": "^1.4.0",
-    "bootstrap": "^5.3.0",
-    "express": "^4.18.2",
-    "gh-pages": "^5.0.0",
-    "lottie-web": "^5.12.2",
-    "mongodb": "^5.7.0",
-    "mongoose": "^7.4.1",
+    "bootstrap": "^5.3.1",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.4",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
-    "react-router": "^6.13.0",
-    "react-router-dom": "^6.13.0",
-    "vite-plugin-top-level-await": "^1.3.1"
+    "react-router": "^6.14.2",
+    "react-router-dom": "^6.14.2"
   },
   "devDependencies": {
-    "@types/react": "^18.0.37",
-    "@types/react-dom": "^18.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.59.0",
-    "@typescript-eslint/parser": "^5.59.0",
-    "@vitejs/plugin-react": "^4.0.0",
-    "eslint": "^8.38.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.3.4",
+    "eslint-plugin-react-refresh": "^0.4.3",
     "typescript": "^5.0.2",
-    "vite": "^4.3.9"
+    "vite": "^4.4.5"
   }
 }
