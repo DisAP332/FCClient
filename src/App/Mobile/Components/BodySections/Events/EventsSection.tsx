@@ -28,7 +28,7 @@ export const EventsSection = (Props) => {
                 <h1> EVENTS </h1>
                 <>
                     <div>
-                        <div className="footerContainer">
+                        <div>
                             {events ? events.map(items => (
                                 <div key={items._id} ><EventCard {...items} /></div>
                             )) : <></>}
