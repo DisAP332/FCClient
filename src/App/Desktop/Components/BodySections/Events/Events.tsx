@@ -4,20 +4,20 @@ import apis from "../../../../Global/DB/index";
 let events: any;
 let Data: any
 
-const fetchEventsData = async () => {
-    Data = await apis.getAllEvents()
-    const DataFormatted = Data.data.data
-    events = DataFormatted
-    console.log('data fetched')
-  }
+// const fetchEventsData = async () => {
+//     Data = await apis.getAllEvents()
+//     const DataFormatted = Data.data.data
+//     events = DataFormatted
+//     console.log('data fetched')
+//   }
   
   
-  try {
-    await fetchEventsData()
-    console.log(events)
-  } catch(err){
-    console.log(err)
-  }
+//   try {
+//     await fetchEventsData()
+//     console.log(events)
+//   } catch(err){
+//     console.log(err)
+//   }
 
 export const EventsSection = (Props) => {
 
@@ -28,9 +28,9 @@ export const EventsSection = (Props) => {
                 <>
                     <div>
                         <div className="footerContainer">
-                            {events ? events.map(items => (
+                            {/* {events ? events.map(items => (
                                 <div key={items._id} ><EventCard {...items} /></div>
-                            )) : <></>}
+                            )) : <></>} */}
                         </div>
                     </div>
                 </>
