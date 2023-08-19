@@ -2,9 +2,9 @@ export const ClubSectionHeader = () => {
     return (
         <>
             <div className="barSectionHeader">
-                <h1> Spacious Seating </h1>
-                <h1> -- Enough for a couple -- </h1>
-                <h1> -- or two... -- </h1>
+                <h3> Spacious Seating </h3>
+                <h3> -- Enough for a couple -- </h3>
+                <h3> -- or two... -- </h3>
             </div>
         </>
     )

@@ -6,18 +6,18 @@
 
 h1 {
   font-family: casualFont;
-  font-size: calc(15px + 4vw) !important;
+  font-size: calc(35px + .8vw) !important;
 }
 
 h2 {
   font-family: sexyFont;
-  font-size: calc(10px + 5vw) !important;
+  font-size: calc(30px + .8vw) !important;
 }
 
 h3 {
   font-family: casualFont;
-  font-size: calc(8px + 3vw) !important;
   margin: 0 !important;
+  font-size: calc(25px + .8vw) !important;
 }
 
 :root {
@@ -283,10 +283,6 @@ h3 {
 
 /* ------ contact us section ------ */
 
-.headerContact > h1{
-  font-size: 60px !important;
-}
-
 .contactUsSection {
   border-top: 3px solid var(--colorLight);
   padding-bottom: 13vh;
@@ -362,7 +358,6 @@ h3 {
 }
 
 .navigationBarDesktop > div > h1 {
-  font-size: 2.5rem !important;
   cursor: pointer;
 }
 
@@ -396,11 +391,6 @@ h3 {
 
 .landingSecDesktop > h1 {
   margin-top: 20px;
-  font-size: 3rem !important;
-}
-
-.landingSecDesktop > h2 {
-  font-size: 3rem !important;
 }
 
 .landingSecDesktop > div:nth-child(3) {
@@ -418,9 +408,7 @@ h3 {
   justify-content: center;
   align-items: end;
 }
-.landingSecDesktop > div:nth-child(3) > div > h2 {
-  font-size: 3rem !important;
-}
+
 
 /* ---- amenities Section -------- */
 
@@ -435,7 +423,6 @@ h3 {
 }
 
 .amenitiesHeaderDesktop > h1 {
-  font-size: 4rem !important;
   margin-left: 10vw;
   margin-right: 10vw;
   text-align: center;
@@ -448,9 +435,6 @@ h3 {
   text-align: center;
 }
 
-.amenitiesSecDesktop > h1 {
-  font-size: 4rem !important;
-}
 
 .amenitiesSecDesktop > div:nth-child(2) {
   display: flex;
@@ -460,7 +444,6 @@ h3 {
 
 .amenitiesSecDesktop > div:nth-child(3) > h2{
   font-family: casualFont !important;
-  font-size: 3.2rem !important;
 }
 
 .amenitiesSecDesktop > div > div {
@@ -471,7 +454,6 @@ h3 {
 }
 
 .amenitiesSecDesktop > div > div > h2 {
-  font-size: 3rem !important;
   font-family: casualFont !important;
 }
 
@@ -491,9 +473,6 @@ h3 {
 }
 
 
-.aboutUsSectionDesktop > h3 {
-  font-size: 2.5rem !important;
-}
 
 /* ----------- Contact Us Section -------------- */
 
@@ -508,13 +487,6 @@ h3 {
   align-items: center;
   text-align: center;
 } 
-
-.contactUsSectionDesktop > div > h2 {
-  font-size: 3rem !important;
-}
-.contactUsSectionDesktop > div > h1 {
-  font-size: 4rem !important;
-}
 
 /* HamToXBtnCSS */
 
