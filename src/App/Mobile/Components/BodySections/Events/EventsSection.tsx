@@ -1,5 +1,6 @@
 import apis from "../../../../Global/DB/index";
 import { EventCard } from "./EventCard";
+import events from '../../../../Global/DB/events.json'
 
 
 // let events: any;
@@ -29,9 +30,9 @@ export const EventsSection = (Props) => {
                 <>
                     <div>
                         <div>
-                            {/* {events ? events.map(items => (
+                            {events ? events.map(items => (
                                 <div key={items._id} ><EventCard {...items} /></div>
-                            )) : <></>} */}
+                            )) : <></>}
                         </div>
                     </div>
                 </>

@@ -239,7 +239,7 @@ h3 {
 .eventsSection {
   flex-direction: column;
   text-align: center;
-  padding-top: 13vh;
+  padding-top: 18vh;
   border-top: 4px solid var(--colorLight);
   margin-bottom: 10vh;
 }
@@ -301,6 +301,10 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contactUsSection > div > h2, h1 {
+  text-align: center;
 }
 
 /* ----- about Us Section -------- */
@@ -468,7 +472,7 @@ h3 {
   align-items: center;
   text-align: center;
   border-top: 8px solid var(--colorLight);
-  padding-top: 15vh ;
+  padding-top: 18vh ;
   padding-bottom: 15vh;
 }
 
@@ -477,7 +481,7 @@ h3 {
 /* ----------- Contact Us Section -------------- */
 
 .contactUsSectionDesktop {
-  padding-top: 15vh;
+  padding-top: 18vh;
   border-top: 8px solid var(--colorLight);
 }
 

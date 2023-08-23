@@ -1,8 +1,9 @@
 import { EventCard } from "./EventsCard";
 import apis from "../../../../Global/DB/index";
+import events from '../../../../Global/DB/events.json'
 
-let events: any;
-let Data: any
+// let events: any;
+// let Data: any
 
 // const fetchEventsData = async () => {
 //     Data = await apis.getAllEvents()
@@ -28,9 +29,9 @@ export const EventsSection = (Props) => {
                 <>
                     <div>
                         <div className="footerContainer">
-                            {/* {events ? events.map(items => (
+                            {events ? events.map(items => (
                                 <div key={items._id} ><EventCard {...items} /></div>
-                            )) : <></>} */}
+                            )) : <></>}
                         </div>
                     </div>
                 </>

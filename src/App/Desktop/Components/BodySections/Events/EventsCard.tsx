@@ -8,7 +8,8 @@ export const EventCard = (Props: any) => {
                     {Props.Name}
                 </h2>
                 <h2>
-                    {(Props.Date).slice(0, 10)}
+                    {/* {(Props.Date).slice(0, 10)} */}
+                    {Props.Date}
                 </h2>
             </div>
             <div>
