@@ -177,10 +177,10 @@ h3 {
 
 .transparentNav {
   background-color: rgba(0, 0, 0, 0.76);
-  padding-top: 15vh;
+  padding-top: 20vh;
   padding-bottom: 5vh;
   width: 100vw;
-  height: 40vh;
+  height: 45vh;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -188,6 +188,7 @@ h3 {
   flex-direction: column;
   color: white;
   border-bottom: 4px solid var(--colorLight);
+  user-select: none;
 }
 
 .navBottomSpace {
