@@ -1,4 +1,4 @@
-import apis from "../../../../Global/DB/index";
+// import apis from "../../../../Global/DB/index";
 import { EventCard } from "./EventCard";
 import events from '../../../../Global/DB/events.json'
 

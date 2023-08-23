@@ -1,5 +1,5 @@
 import { EventCard } from "./EventsCard";
-import apis from "../../../../Global/DB/index";
+// import apis from "../../../../Global/DB/index";
 import events from '../../../../Global/DB/events.json'
 
 // let events: any;
